@@ -1,9 +1,9 @@
 
-public class WaffleOrder implements Command{
+public class DessertOrder implements Command{
     Cook cook;
     String[] chocoList, fruitList, condimentList;
     String order;
-    public WaffleOrder(Cook cook, String order, String[] chocoList, String[] fruitList, String[] condimentList){
+    public DessertOrder(Cook cook, String order, String[] chocoList, String[] fruitList, String[] condimentList){
         this.cook = cook;
         this.order = order;
         this.chocoList = chocoList;
@@ -13,10 +13,10 @@ public class WaffleOrder implements Command{
 
     @Override
     public void orderUp() {
-        cook.waffleType = order;
+        cook.dessertType = order;
         cook.chocoList = this.chocoList;
         cook.fruitList = this.fruitList;
         cook.condimentList = this.condimentList;
-        cook.getOrder("Waffle");
+        cook.getOrder("Dessert");
     }
 }

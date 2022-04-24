@@ -1,33 +1,33 @@
 import Beverage.Beverage;
-import Waffle.Waffle;
-import Waffle.WaffleDecorator.*;
-import Waffle.WaffleDecorator.NormalChocolate;
-import Waffle.WaffleDecorator.Strawberry;
-import Waffle.WaffleDecorator.WhiteChocolate;
+import Dessert.Dessert;
+import Dessert.DessertDecorator.*;
+import Dessert.DessertDecorator.NormalChocolate;
+import Dessert.DessertDecorator.Strawberry;
+import Dessert.DessertDecorator.WhiteChocolate;
 
 // Receiver
 public class Cook {
-    public static String waffleType="";
+    public static String dessertType="";
     public static String beverageType="";
     public static String[] chocoList = null;
     public static String[] fruitList = null;
     public static String[] condimentList = null;
-    Waffle waffle;
+    Dessert dessert;
     Beverage beverage;
     public void getOrder(String factoryType){
-        if(factoryType.equalsIgnoreCase("Waffle")){
-            System.out.println(waffleType + " order received.");
+        if(factoryType.equalsIgnoreCase("Dessert")){
+            System.out.println(dessertType + " order received.");
 
-            WaffleFactory factory =  new WaffleFactory();
-            waffle = factory.makeWaffle(waffleType);
+            DessertFactory factory =  new DessertFactory();
+            dessert = factory.makeDessert(dessertType);
 
-            waffle.prepareDough(waffleType);
-            waffle.cookDough(waffleType);
-            waffle.dishUp(waffleType);
-            waffle = decorate(chocoList, fruitList, condimentList);
+            dessert.prepareDough(dessertType);
+            dessert.cookDough(dessertType);
+            dessert.dishUp(dessertType);
+            dessert = decorate(chocoList, fruitList, condimentList);
 
-            System.out.println(waffle.getDescription() + " order completed.");
-            System.out.println("Cost: $" + waffle.cost());
+            System.out.println(dessert.getDescription() + " order completed.");
+            System.out.println("Cost: $" + dessert.cost());
 
         }
         else if(factoryType.equalsIgnoreCase("Beverage")){
@@ -43,42 +43,42 @@ public class Cook {
         System.out.println("");
     }
 
-    public Waffle decorate(String[] chocoList, String[] fruitList, String[] condimentList){
+    public Dessert decorate(String[] chocoList, String[] fruitList, String[] condimentList){
         for (int i = 0; i < chocoList.length; i++) {
             String choco = chocoList[i];
             if(choco.equals("White")){
-                waffle = new WhiteChocolate(waffle);
+                dessert = new WhiteChocolate(dessert);
             }
-            else if(choco.equals("Normal")){
-                waffle = new NormalChocolate(waffle);
+            else if(choco.equals("Dark")){
+                dessert = new NormalChocolate(dessert);
             }
         }
 
         for (int i = 0; i < fruitList.length; i++) {
             String fruit = fruitList[i];
             if(fruit.equals("Banana")){
-                waffle = new Banana(waffle);
+                dessert = new Banana(dessert);
             }
             else if(fruit.equals("Strawberry")){
-                waffle = new Strawberry(waffle);
+                dessert = new Strawberry(dessert);
             }
             else if(fruit.equals("Kiwi")){
-                waffle = new Kiwi(waffle);
+                dessert = new Kiwi(dessert);
             }
         }
 
         for (int i = 0; i < condimentList.length; i++) {
             String condiment = condimentList[i];
             if(condiment.equals("Almond")){
-                waffle = new Almond(waffle);
+                dessert = new Almond(dessert);
             }
             else if(condiment.equals("Coconut")){
-                waffle = new Coconut(waffle);
+                dessert = new Coconut(dessert);
             }
             else if(condiment.equals("Ice Cream")){
-                waffle = new IceCream(waffle);
+                dessert = new IceCream(dessert);
             }
         }
-        return waffle;
+        return dessert;
     }
 }

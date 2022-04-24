@@ -12,8 +12,10 @@ public class Client {
 
         Scanner scanner = new Scanner(System.in);
         while(true) {
+            System.out.println("Welcome to the Subway cafe!");
             System.out.println("What do you want to order?");
-            System.out.println("(1) Waffle");
+
+            System.out.println("(1) Dessert");
             System.out.println("(2) Drink");
             System.out.println("(Other) I have finished ordering.");
 
@@ -23,13 +25,13 @@ public class Client {
                 ArrayList<String> fruitList = new ArrayList<>();
                 ArrayList<String> condimentList = new ArrayList<>();
 
-                String waffleType = null;
+                String dessertType = null;
                 String answer = null;
 
                 while (true) {
-                    System.out.println("Which waffle do you want?");
-                    System.out.println("(1) Square Waffle --- 5.0$");
-                    System.out.println("(2) Circular Waffle --- 4.0$");
+                    System.out.println("Which dessert do you want?");
+                    System.out.println("(1) Custard Dessert --- 5.0$");
+                    System.out.println("(2) Pudding Dessert --- 4.0$");
 
                     BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
                     try {
@@ -39,12 +41,12 @@ public class Client {
                     }
 
                     if (answer.equals("1")) {
-                        waffleType = "Square Waffle";
-                        System.out.println("*** Square Waffle is chosen.");
+                        dessertType = "Custard Dessert";
+                        System.out.println("*** Custard Dessert is chosen.");
                         break;
                     } else if (answer.equals("2")) {
-                        waffleType = "Circle Waffle";
-                        System.out.println("*** Circular Waffle is chosen.");
+                        dessertType = "Pudding Dessert";
+                        System.out.println("*** Circular Dessert is chosen.");
                         break;
                     } else {
                         continue;
@@ -57,7 +59,7 @@ public class Client {
                 for (int i = 0; i < 2; i++) {
                     System.out.println("-------------------- Chocolate Types --------------------");
                     System.out.println("(1) White Chocolate --- 1.5$");
-                    System.out.println("(2) Nutella --- 1.25$");
+                    System.out.println("(2) Dark Chocolate --- 1.25$");
                     System.out.println("(Other) I finished the chocolate selection.");
 
                     int value = scan.nextInt();
@@ -65,8 +67,8 @@ public class Client {
                         chocoList.add("White");
                         System.out.println("*** White Chocolate is chosen.");
                     } else if (value == 2) {
-                        chocoList.add("Normal");
-                        System.out.println("*** Nutella is chosen.");
+                        chocoList.add("Dark");
+                        System.out.println("*** Dark Chocolate is chosen.");
                     } else break;
                 }
                 System.out.println("The selection of chocolates is completed.");
@@ -77,7 +79,7 @@ public class Client {
                     System.out.println("-------------------- Fruit Types --------------------");
                     System.out.println("(1) Banana --- 0.75$");
                     System.out.println("(2) Strawberry --- 0.65$");
-                    System.out.println("(3) Kiwi --- 0.85$");
+                    System.out.println("(3) Mango --- 0.85$");
                     System.out.println("(Other) I finished the fruit selection.");
                     int value = scan2.nextInt();
                     if (value == 1) {
@@ -87,8 +89,8 @@ public class Client {
                         fruitList.add("Strawberry");
                         System.out.println("*** Strawberry is chosen.");
                     } else if (value == 3) {
-                        fruitList.add("Kiwi");
-                        System.out.println("*** Kiwi is chosen.");
+                        fruitList.add("Mango");
+                        System.out.println("*** Mango is chosen.");
                     } else break;
                 }
                 System.out.println("The selection of fruits is completed.");
@@ -125,8 +127,8 @@ public class Client {
                 String[] condimentArr = new String[condimentList.size()];
                 condimentArr = condimentList.toArray(condimentArr);
 
-                WaffleOrder waffleOrder = new WaffleOrder(cook, waffleType, chocoArr, fruitArr, condimentArr);
-                waitress.takeOrder(waffleOrder);
+                DessertOrder dessertOrder = new DessertOrder(cook, dessertType, chocoArr, fruitArr, condimentArr);
+                waitress.takeOrder(dessertOrder);
             }
 
             else if(a==2) {
@@ -179,7 +181,7 @@ public class Client {
 
             else{
                 System.out.println("-------------------------------------------------------------------------------");
-                System.out.println("BON APPETIT");
+                System.out.println("Thanks for coming.See you again");
                 break;
             }
         }

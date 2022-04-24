@@ -1,8 +1,8 @@
 // Component
 
-package Waffle;
+package Dessert;
 
-public abstract class Waffle {
+public abstract class Dessert {
     String description="";
 
     public abstract double cost();
