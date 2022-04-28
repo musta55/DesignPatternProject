@@ -1,7 +1,9 @@
 import Beverage.*;
 
-public class BeverageFactory {
-
+public class BeverageFactory implements  Factory{
+    public void specs(String factoryItem) {
+        System.out.println("Factory item is Beverage");
+    }
     public Beverage makeBeverage(String beverageType) {
         if (beverageType.equals(null)){
             return null;

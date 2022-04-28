@@ -12,11 +12,11 @@ public abstract class Dessert {
     }
 
     public void prepareDough(String type) {
-        System.out.println("Preparing "+ type + " dough");
+        System.out.println("Preparing "+ type + " milk");
     }
 
     public void cookDough(String type) {
-        System.out.println("Cooking " + type + " dough");
+        System.out.println("Cooking " + type + " milk");
     }
 
     public void dishUp(String type) {

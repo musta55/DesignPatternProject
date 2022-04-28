@@ -1,75 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b64e4ea6-f8a7-41e5-a322-783c097f5648" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Dessert/Custards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/Almond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/Banana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/ChocolateDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/Coconut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/CondimentDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/FruitDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/IceCream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/Kiwi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/NormalChocolate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/Strawberry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/DessertDecorator/WhiteChocolate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dessert/Pudding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DessertFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="b64e4ea6-f8a7-41e5-a322-783c097f5648" name="Default" comment="init commin,, completed project">
+      <change afterPath="$PROJECT_DIR$/src/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaffleShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Subway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/Beverage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/Coffee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/Cola.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/ColdBeverage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/Fanta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/HotBeverage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/IceTea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/Sprite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Beverage/Tea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/BeverageFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/BeverageOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Cook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/CircleWaffle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/SquareWaffle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/Waffle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/Almond.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/Banana.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/ChocolateDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/Coconut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/CondimentDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/FruitDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/IceCream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/Kiwi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/NormalChocolate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/Strawberry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waffle/WaffleDecorator/WhiteChocolate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/WaffleFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/WaffleOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WaffleShop/Waitress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/CircleWaffle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/SquareWaffle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/Waffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dessert/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/Almond.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/Banana.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/ChocolateDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/Coconut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/CondimentDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/FruitDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/IceCream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/Kiwi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/NormalChocolate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/Strawberry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waffle/WaffleDecorator/WhiteChocolate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WaffleFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WaffleOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DessertOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Beverage/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beverage/Beverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BeverageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BeverageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dessert/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dessert/Dessert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DessertFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DessertFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -552,6 +490,14 @@
       <workItem from="1492888643335" duration="12938000" />
       <workItem from="1492943907240" duration="533000" />
     </task>
+    <task id="LOCAL-00001" summary="init commin,, completed project">
+      <created>1650770094163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650770094163</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -636,6 +582,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commin,, completed project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commin,, completed project" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

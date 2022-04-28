@@ -1,7 +1,7 @@
 package Beverage;
 
 public interface Beverage {
-    public String getDescription();
-    public double cost();
-    public void prepareBeverage();
+     String getDescription();
+     double cost();
+     void prepareBeverage();
 }
